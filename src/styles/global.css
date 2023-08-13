@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:focus{
+    outline: 0;
+    /* box-shadow: 0 0 0 2px #ffffff */
+}
+
+@keyframes animatedBackground {
+  0% {
+    background-position: center 0;
+  }
+  50% {
+    background-position: center -30px; /* Mova para cima 20 pixels */
+  }
+  100% {
+    background-position: center 0;
+  }
+}
+
+/* Aplica a animação ao background do body */
+body {
+  background-image: url('../assets/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: animatedBackground 3s infinite; /* 10 segundos de duração, repetição infinita */
+  color: #010204;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+} 
+
+@media (min-width: 768px) {
+  body {
+    background-size: cover;
+  }
+}
