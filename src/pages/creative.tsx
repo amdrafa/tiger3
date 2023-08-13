@@ -3,7 +3,6 @@ import Modal from 'react-modal'
 import { Helmet } from "react-helmet"
 import { useState, useEffect } from 'react';
 import { customStyles } from "../styles/modal";
-import logo from "../assets/tigergpt.png";
 import { useNavigate } from "react-router-dom";
 import { HackPanel } from "../components/hack-panel";
 import google from "../assets/goog.png";
@@ -13,8 +12,6 @@ import Loading from "../components/loading";
 import close from "../assets/close.png";
 
 export function Creative() {
-
-    const navigate = useNavigate();
 
     const [modalIsOpen, setIsOpen] = useState(false)
 

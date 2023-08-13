@@ -38,9 +38,6 @@ export function Home() {
         setIsOpen(false);
     }
 
-    function openFirstModal() {
-        setIsFirstModalOpen(true);
-    }
 
     function closFirstModal() {
         setIsFirstModalOpen(false);

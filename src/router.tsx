@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home";
-import { AreasDetail } from "./pages/areas/detail";
 import { SecondQuestion } from "./pages/second-question";
 import { VslTiger } from "./pages/vsltiger";
 import { Creative } from "./pages/creative";

@@ -1,9 +1,5 @@
 import { Header } from "../components/header";
-import Modal from 'react-modal'
-import { Helmet } from "react-helmet"
 import { useState, useEffect } from 'react';
-import { customStyles } from "../styles/modal";
-import logo from "../assets/tigergpt.png";
 import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 import google from "../assets/goog.png";
@@ -12,9 +8,8 @@ import chat from "../assets/chat.png";
 
 export function VslTiger() {
 
-    const navigate = useNavigate();
 
-    const [selectedHour, setSelectedHour] = useState(dayjs().add(2.8, 'hour').format('h:mm'))
+    const [selectedHour] = useState(dayjs().add(2.8, 'hour').format('h:mm'))
 
     const [viewers, setViewers] = useState(800);
 
