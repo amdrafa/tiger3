@@ -8,9 +8,11 @@ export const customStyles = {
         transform: 'translate(-50%, -50%)',
         background: '#5d0000',
         border: 'none',
-        padding: '2rem'
+        padding: '2rem',
+        zIndex: 1000
     },
     overlay: {
-        backgroundColor: 'rgba(0, 0, 0, 0.5)'
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        zIndex: 1000
     },
 };
