@@ -80,7 +80,7 @@ export function VslTiger() {
             </div>
 
             <div className="flex justify-center mb-8">
-                <a href="https://go.perfectpay.com.br/PPU38CMS4N0">
+                <a href="https://go.perfectpay.com.br/PPU38CMTB4P">
                     <button
                         className="bg-green-600 p-4 rounded-2xl text-white text-xl font-bold">
                         PAGAR TAXA DE USO <span className="text-yellow-300 font-extrabold">(R$19,00) </span>E SACAR O RESTANTE <span className="text-lime-400 font-extrabold">(R$431,00) </span>
