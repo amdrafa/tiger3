@@ -37,7 +37,7 @@ export function VslTiger() {
         /* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
         let attempts = 0;
         let elsDisplayed = false;
-        const alreadyDisplayedKey = `alreadyElsDisplayed${SECONDS_TO_DISPLAY}`
+        const alreadyDisplayedKey = `alreadyElsDisplayedVSL${SECONDS_TO_DISPLAY}`
         const alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
 
         const showHiddenElements = function () {
