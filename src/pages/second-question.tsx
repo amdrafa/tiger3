@@ -109,6 +109,10 @@ export function SecondQuestion() {
                     rounds="3"
                 />
             </div>
+
+            <div className="text-center text-white text-md py-4">
+                Basta <span className="font-bold text-green-400">clicar uma vez</span> que a inleligência artificial joga <span className="font-bold text-green-400">automaticamente</span> por você.
+            </div>
             <div className="p-4">
                 {isVideoLoading ? (
                     <Loading />
