@@ -92,7 +92,7 @@ export function VslTiger() {
                     <a href="https://go.perfectpay.com.br/PPU38CNK630">
                         <button
                             className="bg-green-600 p-4 rounded-2xl text-white text-xl font-bold">
-                            PAGAR TAXA DE USO <span className="text-yellow-300 font-extrabold">REALIZAR CADASTRO </span>E SACAR O RESTANTE DO DINHEIRO
+                            <span className="text-yellow-300 font-extrabold">REALIZAR CADASTRO </span>E SACAR O RESTANTE DO DINHEIRO
                         </button>
                     </a>
                 </div>
