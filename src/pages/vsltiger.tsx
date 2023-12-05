@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 import google from "../assets/goog.png";
 import chat from "../assets/chat.png";
+import { Helmet } from "react-helmet";
 
 
 export function VslTiger() {
@@ -31,7 +32,7 @@ export function VslTiger() {
 
     useEffect(() => {
         /* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
-        const SECONDS_TO_DISPLAY = 5;
+        const SECONDS_TO_DISPLAY = 345;
 
         /* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
         let attempts = 0;
@@ -79,14 +80,23 @@ export function VslTiger() {
                 SAQUE SEU <span className="text-yellow-500 font-extrabold">DINHEIRO</span>, GANHE <span className="bg-green-600 p-0.2">ACESSO AO APP</span> E FAÇA MAIS DE <span className="text-yellow-500 font-extrabold">R$759,00 </span>ATÉ HOJE ÀS <span className="bg-green-600 p-0.2"> {selectedHour} HORAS</span>
             </div>
 
-            <div className="flex justify-center mb-8">
-                <a href="https://secure.doppus.com/pay/CB535H8FZ0008BK297555">
-                    <button
-                        className="bg-green-600 p-4 rounded-2xl text-white text-xl font-bold">
-                        PAGAR TAXA DE USO <span className="text-yellow-300 font-extrabold">(R$19,00) </span>E SACAR O RESTANTE <span className="text-lime-400 font-extrabold">(R$431,00) </span>
-                    </button>
-                </a>
+            <div className="border-[8px] rounded-lg border-red-950 mb-6">
+                <div dangerouslySetInnerHTML={{ __html: '<div id="vid_656f1db83e97e50009923412" style="position:relative;width:100%;padding: 178.21782178217822% 0 0;"><img id="thumb_656f1db83e97e50009923412" src="https://images.converteai.net/20fc57a9-9d12-47a2-b1f8-a9836bc4c0e0/players/656f1db83e97e50009923412/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_656f1db83e97e50009923412" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div>' }} />
+                <Helmet>
+                    <script type="text/javascript" id="scr_656f1db83e97e50009923412">var s=document.createElement("script");s.src="https://scripts.converteai.net/20fc57a9-9d12-47a2-b1f8-a9836bc4c0e0/players/656f1db83e97e50009923412/player.js",s.async=!0,document.head.appendChild(s);</script>
+                </Helmet>
             </div>
+
+            {isVisible && (
+                <div className="flex justify-center mb-8">
+                    <a href="https://secure.doppus.com/pay/CB535H8FZ0008BK297555">
+                        <button
+                            className="bg-green-600 p-4 rounded-2xl text-white text-xl font-bold">
+                            PAGAR TAXA DE USO <span className="text-yellow-300 font-extrabold">(R$19,00) </span>E SACAR O RESTANTE <span className="text-lime-400 font-extrabold">(R$431,00) </span>
+                        </button>
+                    </a>
+                </div>
+            )}
 
             <div className="flex justify-center mb-6">
                 <p className="text-white font-bold px-10 text-center">

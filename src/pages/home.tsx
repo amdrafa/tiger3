@@ -116,9 +116,9 @@ export function Home() {
 
             <div className="p-4">
                 <div className={`border-[8px] rounded-lg border-red-950 mb-6 ${isFirstModalOpen ? 'hidden' : ''}`}>
-                    <div dangerouslySetInnerHTML={{ __html: '<div id="vid_65317581e956e500092126d5" style="position:relative;width:100%;padding: 178.21782178217822% 0 0;"><img id="thumb_65317581e956e500092126d5" src="https://images.converteai.net/4bca4dd6-bbad-4057-809c-56b055191e13/players/65317581e956e500092126d5/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_65317581e956e500092126d5" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div>' }} />
+                    <div dangerouslySetInnerHTML={{ __html: '<div id="vid_656f1ede3e97e50009923423" style="position:relative;width:100%;padding: 178.21782178217822% 0 0;"><img id="thumb_656f1ede3e97e50009923423" src="https://images.converteai.net/20fc57a9-9d12-47a2-b1f8-a9836bc4c0e0/players/656f1ede3e97e50009923423/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_656f1ede3e97e50009923423" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div>' }} />
                     <Helmet>
-                        <script type="text/javascript" id="scr_65317581e956e500092126d5">var s=document.createElement("script");s.src="https://scripts.converteai.net/4bca4dd6-bbad-4057-809c-56b055191e13/players/65317581e956e500092126d5/player.js",s.async=!0,document.head.appendChild(s);</script>
+                        <script type="text/javascript" id="scr_656f1ede3e97e50009923423">var s=document.createElement("script");s.src="https://scripts.converteai.net/20fc57a9-9d12-47a2-b1f8-a9836bc4c0e0/players/656f1ede3e97e50009923423/player.js",s.async=!0,document.head.appendChild(s);</script>
                     </Helmet>
                 </div>
             </div>
@@ -173,10 +173,10 @@ export function Home() {
                     >
                         Jogar novamente
                     </button>
-                    <span className="w-full flex justify-center text-gray-100">
+                    {/* <span className="w-full flex justify-center text-gray-100">
                         ou
                     </span>
-                    <button className="p-4 bg-green-600 rounded-2xl w-full text-white text-xl font-bold"
+                    <button disabled className="p-4 bg-green-600 rounded-2xl w-full text-white text-xl font-bold"
                         onClick={() => {
                             localStorage.removeItem("alreadyElsDisplayed17");
                             navigate("/register");
@@ -184,7 +184,7 @@ export function Home() {
                         }}
                     >
                         Resgatar dinheiro
-                    </button>
+                    </button> */}
                 </div>
 
                 <div className="flex justify-center items-center space-x-4">
