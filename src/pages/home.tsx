@@ -164,7 +164,7 @@ export function Home() {
 
 
                 <div className="flex flex-col space-y-3 mb-8">
-                    <button className="p-4 bg-yellow-500 rounded-2xl w-full text-white text-xl font-bold"
+                    <button className="p-4 bg-green-500 rounded-2xl w-full text-white text-xl font-bold"
                         onClick={() => {
                             localStorage.removeItem("alreadyElsDisplayed17");
                             navigate("/secondplay");
