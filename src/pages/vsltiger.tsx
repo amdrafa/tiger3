@@ -93,7 +93,7 @@ export function VslTiger() {
                 </div>
 
                 <div className="text-center text-white font-bold text-2xl mt-2 mb-8 mx-2">
-                    A taxa para se tornar usuário premium é de <span className="text-yellow-300 font-extrabold bg-red-600 p-0.5">R$27,90</span>.
+                    A taxa para se tornar usuário premium é de <span className="text-yellow-300 font-extrabold bg-red-600 p-0.5">R$19,90</span>.
                 </div>
 
                 {/* <div className="border-[8px] rounded-lg border-red-950 mb-6">
