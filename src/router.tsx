@@ -5,6 +5,7 @@ import { VslTiger } from "./pages/vsltiger";
 import { Creative } from "./pages/creative";
 import { Register } from "./pages/register";
 import { BackRedirect } from "./pages/backredirect";
+import { Bet } from "./pages/bet";
 
 export function Router() {
     return (
@@ -15,6 +16,7 @@ export function Router() {
             <Route path="/game" element={<Creative />} />
             <Route path="/register" element={<Register />} />
             <Route path="/backredirect" element={<BackRedirect />} />
+            <Route path="/bet" element={<Bet />} />
         </Routes>
     );
 }
